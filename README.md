@@ -17,3 +17,16 @@ and
 ````
 npm start
 ````
+
+API runs on localhost:8000
+
+Example Request
+=====
+````
+curl -X GET 'http://localhost:8000/welcome' -H 'Content-Type: application/json' -H 'Accept: application/json'
+````
+
+How to commit
+=======
+
+All endpoints will/can be added to /routes/index.js at the moment for simplicity's sake.

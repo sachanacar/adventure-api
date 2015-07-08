@@ -5,7 +5,7 @@ var inventory = ['torch', 'rope', 'code: 678'];
 var i = inventory.length;
 //Welcome page
 router.get('/welcome', function(req, res) {
-  res.send("  __    __     _ \n / / /\\ \\ \\___| | ___ ___  _ __ ___   ___ \n \\ \\/  \\/ / _ \\ |/ __/ _ \\| '_ ` _ \\ / _ \\  \n  \\  /\\  /  __/ | (_| (_) | | | | | |  __/  \n   \\/  \\/ \\___|_|\\___\\___/|_| |_| |_|\\___|\n\nYou've trespassed on the API Temple. Prepare to die, or be tickled by lolcatz or something... I am Reginald X, your assistant for the road ahead, but just call me Regex or Reggie. You can always ask for help by calling me at /regex . See you on July 29th!\n\n\n");
+  res.send("  __    __     _ \n / / /\\ \\ \\___| | ___ ___  _ __ ___   ___ \n \\ \\/  \\/ / _ \\ |/ __/ _ \\| '_ ` _ \\ / _ \\  \n  \\  /\\  /  __/ | (_| (_) | | | | | |  __/  \n   \\/  \\/ \\___|_|\\___\\___/|_| |_| |_|\\___|\n\nYou've trespassed on the API Temple. Prepare to die, or be tickled by lolcatz or something... I am Reginald X, your assistant for the road ahead, but just call me Regex or Reggie. You can always ask for help by calling me at /regex . Start the adventure by enterign the temple (/start)\n\n\n");
 });
 
 //Entrance!

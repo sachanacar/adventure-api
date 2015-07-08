@@ -26,15 +26,15 @@ var wurl = req.url;
 var parsedUrl = url.parse(wurl, true, true);
 var torch = parsedUrl.query.torch;
 console.log(torch);
-if (torch == 'true'){
+if (torch == 'on'){
   var index = inventory.indexOf('empty');
   var codestring = inventory.indexOf('code:678');
   if (index !== -1 && codestring ==-1) {
     inventory[index] = 'code:678';
   }
-  res.send("======================================\nYou lit up your torch.\n\nOh! seems like there's something in the corner.\n\nIt's a piece of paper with a code on it: '687'. Let's keep it for later...\n\n[Code stored in your inventory!]\n\n======================================\n");
+  res.send("======================================\n\nYou lit up your torch.\n\nOh! seems like there's something in the corner.\n\nIt's a piece of paper with a code on it: '687'. Let's keep it for later...\n\n[Code stored in your inventory!]\n\n======================================\n");
 }else{
-  res.send("======================================\n\nYou've entered the West Room. It's dark in here...\n\n\n༼ つ ◕_◕ ༽つ\n\n**Reggie**: use your torch! (/west-room?torch=true)\n\n======================================\n");
+  res.send("======================================\n\nYou've entered the West Room. It's dark in here...\n\n\n༼ つ ◕_◕ ༽つ\n\n**Reggie**: use your torch! (/west-room?torch=on)\n\n======================================\n");
 }
 });
 
